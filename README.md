@@ -31,6 +31,11 @@ work. In RStudio, using
 
 should create enough of an R package setup for aoc to work.
 
+Alternatively, you can just use `aoc::create_aoc()`, specifying you package 
+path as an argument in the function. This will create your aoc package for 
+you and create a dev folder with scripts to help you start working on your 
+aoc problems.
+
 ## Functionality
 
 aoc assumes that you are working inside an R package. By default, it
@@ -383,3 +388,8 @@ Executing: pandoc -t markdown -o "C:\Users\Tristan\AppData\Local\Temp\Rtmpg584jz
 #' Given that exactly one program is the wrong weight, *what would its
 #' weight need to be* to balance the entire tower? 
 ```
+
+## Credit
+
+- Thanks to {golem} for their implementation of dev files to support 
+package development. `aoc::create_aoc()` is inspired by and based on `golem::create_golem()`.

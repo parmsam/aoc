@@ -48,6 +48,11 @@ requires a minimal package infrastructure in order to work. In RStudio, using
 
 should create enough of an R package setup for aoc to work.
 
+Alternatively, you can just use `aoc::create_aoc()`, specifying you package 
+path as an argument in the function. This will create your aoc package for 
+you and create a dev folder with scripts to help you start working on your 
+aoc problems.
+
 ## Functionality
 
 aoc assumes that you are working inside an R package. By default, it assumes the
@@ -221,3 +226,7 @@ file.remove(list.files("tests/testthat", pattern = "test.day*", full.names = TRU
 file.remove("R/data-solutions.R")
 ```
 
+## Credit
+
+- Thanks to {golem} for their implementation of dev files to support 
+package development. `aoc::create_aoc()` is inspired by and based on `golem::create_golem()`.
