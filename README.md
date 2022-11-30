@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# aoc
+# aoc <img src="man/figures/logo.png" align="right" height="139" />
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -391,5 +391,11 @@ Executing: pandoc -t markdown -o "C:\Users\Tristan\AppData\Local\Temp\Rtmpg584jz
 
 ## Credit
 
-- Thanks to [{golem}](https://github.com/ThinkR-open/golem) for their implementation of dev files to support 
+Thanks to [{golem}](https://github.com/ThinkR-open/golem) for their implementation of dev files to support 
 package development. `aoc::create_aoc()` is inspired by and based on `golem::create_golem()`.
+
+Hex icon created using the [hexmake
+app](https://connect.thinkr.fr/hexmake/) from
+[ColinFay](https://github.com/ColinFay/hexmake).
+
+<a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Freepik - Flaticon</a>
