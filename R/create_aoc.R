@@ -15,7 +15,8 @@
 #' Creates a package skeleton to work on Advent of Code.
 #'
 #' See `aoc::use_day()` function details (`?aoc::use_day()`) for more info on
-#' primary package function.
+#' primary package function. Function based on `golem::create_golem()`
+#' (https://github.com/ThinkR-open/golem).
 #' @export
 
 create_aoc <- function(

@@ -4,7 +4,8 @@
 # fill every dev script before getting started.
 # 01_start.R should be filled at start.
 # 02_dev.R should be used to keep track of your development during the project.
-#
+# Dev file templates based on golem package dev files
+# (https://github.com/ThinkR-open/golem).
 #
 ########################################
 #### CURRENT FILE: ON DEV SCRIPT #####
