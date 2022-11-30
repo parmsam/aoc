@@ -391,5 +391,5 @@ Executing: pandoc -t markdown -o "C:\Users\Tristan\AppData\Local\Temp\Rtmpg584jz
 
 ## Credit
 
-- Thanks to {golem} for their implementation of dev files to support 
+- Thanks to [{golem}](https://github.com/ThinkR-open/golem) for their implementation of dev files to support 
 package development. `aoc::create_aoc()` is inspired by and based on `golem::create_golem()`.
