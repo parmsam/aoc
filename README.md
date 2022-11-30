@@ -26,8 +26,8 @@ aoc assumes that we are organizing our R code using an R package.
 Therefore, it requires a minimal package infrastructure in order to
 work. In RStudio, using
 
--   File > New Project… > New Directory > R Package
--   Setting the package name to `adventofcode21` > Create Project
+- File \> New Project… \> New Directory \> R Package
+- Setting the package name to `adventofcode21` \> Create Project
 
 should create enough of an R package setup for aoc to work.
 
@@ -44,18 +44,18 @@ placeholder files for each day.
 
 `use_day(day = 1)` does the following tasks:
 
--   on first run, creates `R/data-solutions.R`
-    -   a file for storing solutions
--   creates `R/day01.R`
-    -   puts the puzzle description into a roxygen documentation block
-    -   creates placeholder functions for the solutions to day 1
--   creates `tests/testthat/test-day01.R`
-    -   a unit test for day (useful for the example in the puzzle
-        description) in `tests/testthat/test-day01.R`
--   creates `inst/input01.txt`
-    -   a file to hold the input for day 1
--   creates `inst/run-day01.R`
-    -   a file to contain the solution for day 1
+- on first run, creates `R/data-solutions.R`
+  - a file for storing solutions
+- creates `R/day01.R`
+  - puts the puzzle description into a roxygen documentation block
+  - creates placeholder functions for the solutions to day 1
+- creates `tests/testthat/test-day01.R`
+  - a unit test for day (useful for the example in the puzzle
+    description) in `tests/testthat/test-day01.R`
+- creates `inst/input01.txt`
+  - a file to hold the input for day 1
+- creates `inst/run-day01.R`
+  - a file to contain the solution for day 1
 
 ``` r
 aoc::use_day(1, year = 2020)
@@ -156,7 +156,7 @@ so there is a stub for `example_data_01()`.
     #' 
     #' In this list, the two entries that sum to `2020` are `1721` and `299`.
     #' Multiplying them together produces `1721 * 299 = 514579`, so the correct
-    #' answer is `514579`.
+    #' answer is *`514579`*.
     #' 
     #' Of course, your expense report is much larger. *Find the two entries
     #' that sum to `2020`; what do you get if you multiply them together?*
@@ -232,17 +232,17 @@ We can tell aoc which year to use by using `options()`.
 ``` r
 options(aoc.year = 2017)
 aoc::use_day(3)
-#> Executing: pandoc -t markdown -o "C:\Users\Tristan\AppData\Local\Temp\Rtmpg584jz\file40742a5c613a.markdown" "C:\Users\Tristan\AppData\Local\Temp\Rtmpg584jz\file40742a5c613a.html"
-#> v Writing 'R/day03.R'
-#> <U+25CF> Write your solution code here
-#> <U+25CF> Once you unlock Part Two, update the Roxygen block with the description
-#> v Writing 'inst/input03.txt'
-#> <U+25CF> Copy your problem input into this file
-#> v Writing 'tests/testthat/test-day03.R'
-#> * Edit 'tests/testthat/test-day03.R'
-#> <U+25CF> Write unit tests using the examples from the problem description
-#> v Writing 'inst/run-day03.R'
-#> <U+25CF> Run your solution on the input here. Once it works, update R/data-solutions.R
+#> Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file5190130e6848.markdown" "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file5190130e6848.html"
+#> ✔ Writing 'R/day03.R'
+#> ● Write your solution code here
+#> ● Once you unlock Part Two, update the Roxygen block with the description
+#> ✔ Writing 'inst/input03.txt'
+#> ● Copy your problem input into this file
+#> ✔ Writing 'tests/testthat/test-day03.R'
+#> • Edit 'tests/testthat/test-day03.R'
+#> ● Write unit tests using the examples from the problem description
+#> ✔ Writing 'inst/run-day03.R'
+#> ● Run your solution on the input here. Once it works, update R/data-solutions.R
 ```
 
 If we look at the first lines of `R/day03.R`, we can see the correct URL
@@ -266,17 +266,17 @@ We can also tell aoc which package name to use for our project using
 ``` r
 options(aoc.package = "awesomeadvent2017")
 aoc::use_day(4)
-#> Executing: pandoc -t markdown -o "C:\Users\Tristan\AppData\Local\Temp\Rtmpg584jz\file4074505f5e2e.markdown" "C:\Users\Tristan\AppData\Local\Temp\Rtmpg584jz\file4074505f5e2e.html"
-#> v Writing 'R/day04.R'
-#> <U+25CF> Write your solution code here
-#> <U+25CF> Once you unlock Part Two, update the Roxygen block with the description
-#> v Writing 'inst/input04.txt'
-#> <U+25CF> Copy your problem input into this file
-#> v Writing 'tests/testthat/test-day04.R'
-#> * Edit 'tests/testthat/test-day04.R'
-#> <U+25CF> Write unit tests using the examples from the problem description
-#> v Writing 'inst/run-day04.R'
-#> <U+25CF> Run your solution on the input here. Once it works, update R/data-solutions.R
+#> Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file51907d54292c.markdown" "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file51907d54292c.html"
+#> ✔ Writing 'R/day04.R'
+#> ● Write your solution code here
+#> ● Once you unlock Part Two, update the Roxygen block with the description
+#> ✔ Writing 'inst/input04.txt'
+#> ● Copy your problem input into this file
+#> ✔ Writing 'tests/testthat/test-day04.R'
+#> • Edit 'tests/testthat/test-day04.R'
+#> ● Write unit tests using the examples from the problem description
+#> ✔ Writing 'inst/run-day04.R'
+#> ● Run your solution on the input here. Once it works, update R/data-solutions.R
 ```
 
 And here the correct name appears in the `library()` call.
@@ -315,18 +315,18 @@ file.rename(".xaoccookie", ".aoccookie")
 
 aoc::use_day(7)
 #> downloading puzzle html using .aoccookie
-#> Executing: pandoc -t markdown -o "C:\Users\Tristan\AppData\Local\Temp\Rtmpg584jz\file4074341e7624.markdown" "C:\Users\Tristan\AppData\Local\Temp\Rtmpg584jz\file4074341e7624.html"
-#> v Writing 'R/day07.R'
-#> <U+25CF> Write your solution code here
-#> <U+25CF> Once you unlock Part Two, update the Roxygen block with the description
+#> Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file51901d8e242f.markdown" "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file51901d8e242f.html"
+#> ✔ Writing 'R/day07.R'
+#> ● Write your solution code here
+#> ● Once you unlock Part Two, update the Roxygen block with the description
 #> downloading puzzle input using .aoccookie
-#> v Writing 'inst/input07.txt'
-#> <U+25CF> Copy your problem input into this file
-#> v Writing 'tests/testthat/test-day07.R'
-#> * Edit 'tests/testthat/test-day07.R'
-#> <U+25CF> Write unit tests using the examples from the problem description
-#> v Writing 'inst/run-day07.R'
-#> <U+25CF> Run your solution on the input here. Once it works, update R/data-solutions.R
+#> ✔ Writing 'inst/input07.txt'
+#> ● Copy your problem input into this file
+#> ✔ Writing 'tests/testthat/test-day07.R'
+#> • Edit 'tests/testthat/test-day07.R'
+#> ● Write unit tests using the examples from the problem description
+#> ✔ Writing 'inst/run-day07.R'
+#> ● Run your solution on the input here. Once it works, update R/data-solutions.R
 
 # this is a function i defined in a hidden code block 🤫
 preview_lines("inst/input07.txt")
@@ -350,7 +350,7 @@ is copied to the clipboard, but for this demo, I have to disable it.
 ``` r
 aoc::download_part2_to_roxygen_md(day = 7, clip = FALSE)
 downloading puzzle html using .aoccookie
-Executing: pandoc -t markdown -o "C:\Users\Tristan\AppData\Local\Temp\Rtmpg584jz\file40743a65678c.markdown" "C:\Users\Tristan\AppData\Local\Temp\Rtmpg584jz\file40743a65678c.html"
+Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file519059263c05.markdown" "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file519059263c05.html"
 #' **Part Two**
 #' The programs explain the situation: they can\'t get down. Rather, they
 #' *could* get down, if they weren\'t expending all of their energy trying
@@ -390,4 +390,5 @@ Hex icon created using the [hexmake
 app](https://connect.thinkr.fr/hexmake/) from
 [ColinFay](https://github.com/ColinFay/hexmake).
 
-<a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/star" title="star icons">Star
+icons created by Freepik - Flaticon</a>
