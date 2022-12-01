@@ -20,9 +20,14 @@
 usethis::use_pipe(export = TRUE)
 
 ## Use cookie file ----
-## Store your aoc cookie in file named .aoccookie
-## use_day() will automatically use this cookie when downloading puzzle input.
+## Store your aoc cookie in a file named .aoccookie
+## use_day() will automatically use this cookie to download your puzzle input.
 # add .aoccookie file to your gitignore dotfile
+fs::file_create(".aoccookie")
+rstudioapi::navigateToFile(".aoccookie")
+# add string object named session to .aoccokie
+# session=[...]" where [...] is whatever the key is
+# find your key using your preferred browser devtools
 usethis::use_git_ignore(".aoccookie")
 
 ## Setup each aoc day as you work ----
