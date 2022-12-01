@@ -22,12 +22,17 @@ Config/testthat/edition: 3
 Imports: 
     usethis,
     clipr,
+    cli,
     clisymbols,
     crayon,
     curl,
+    fs,
     glue,
+    here,
     knitr,
     readr,
+    rstudioapi,
     stringr,
+    utils,
     xml2,
     withr
