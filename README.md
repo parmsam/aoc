@@ -31,10 +31,10 @@ work. In RStudio, using
 
 should create enough of an R package setup for aoc to work.
 
-Alternatively, you can just use `aoc::create_aoc()`, specifying you package 
-path as an argument in the function. This will create your aoc package for 
-you and create a dev folder with scripts to help you start working on your 
-aoc problems.
+Alternatively, you can just use `aoc::create_aoc()`, specifying you
+package path as an argument in the function. This will create your aoc
+package for you and create a dev folder with scripts to help you start
+working on your aoc problems.
 
 ## Functionality
 
@@ -64,23 +64,21 @@ placeholder files for each day.
 
 ``` r
 aoc::use_day(1, year = 2020)
-#> √ Writing 'R/data-solutions.R'
-#> * Modify 'R/data-solutions.R'
+#> ✔ Writing 'R/data-solutions.R'
+#> • Modify 'R/data-solutions.R'
+#> downloading puzzle html using .aoccookie
 #> Executing: pandoc -t markdown -o 
-#> "C:\Users\trist\AppData\Local\Temp\RtmpiYf4Vi\file42a83cf05e25.markdown" 
-#> ">C:\Users\trist\AppData\Local\Temp\RtmpiYf4Vi\file42a83cf05e25.html"
-#> √ Writing 'R/day01.R'
-#> * Modify 'R/day01.R'
+#> "C:\Users\trist\AppData\Local\Temp\RtmpK8sv2r\file228c54056ded.markdown" 
+#> "C:\Users\trist\AppData\Local\Temp\RtmpK8sv2r\file228c54056ded.html"
+#> ✔ Writing 'R/day01.R'
 #> ● Write your solution code here
 #> ● Once you unlock Part Two, update the Roxygen block with the description
-#> √ Writing 'inst/input01.txt'
-#> * Modify 'inst/input01.txt'
+#> ✔ Writing 'inst/input01.txt'
 #> ● Copy your problem input into this file
-#> √ Writing 'tests/testthat/test-day01.R'
-#> * Modify 'tests/testthat/test-day01.R'
+#> ✔ Writing 'tests/testthat/test-day01.R'
+#> • Edit 'tests/testthat/test-day01.R'
 #> ● Write unit tests using the examples from the problem description
-#> √ Writing 'inst/run-day01.R'
-#> * Modify 'inst/run-day01.R'
+#> ✔ Writing 'inst/run-day01.R'
 #> ● Run your solution on the input here. Once it works, update R/data-solutions.R
 ```
 
@@ -237,7 +235,7 @@ We can tell aoc which year to use by using `options()`.
 ``` r
 options(aoc.year = 2017)
 aoc::use_day(3)
-#> Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file5190130e6848.markdown" "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file5190130e6848.html"
+#> Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpCYEhnm\file49483da20fa.markdown" "C:\Users\trist\AppData\Local\Temp\RtmpCYEhnm\file49483da20fa.html"
 #> ✔ Writing 'R/day03.R'
 #> ● Write your solution code here
 #> ● Once you unlock Part Two, update the Roxygen block with the description
@@ -271,7 +269,7 @@ We can also tell aoc which package name to use for our project using
 ``` r
 options(aoc.package = "awesomeadvent2017")
 aoc::use_day(4)
-#> Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file51907d54292c.markdown" "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file51907d54292c.html"
+#> Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpCYEhnm\file494890a25ab.markdown" "C:\Users\trist\AppData\Local\Temp\RtmpCYEhnm\file494890a25ab.html"
 #> ✔ Writing 'R/day04.R'
 #> ● Write your solution code here
 #> ● Once you unlock Part Two, update the Roxygen block with the description
@@ -320,7 +318,7 @@ file.rename(".xaoccookie", ".aoccookie")
 
 aoc::use_day(7)
 #> downloading puzzle html using .aoccookie
-#> Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file51901d8e242f.markdown" "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file51901d8e242f.html"
+#> Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpCYEhnm\file49485df03093.markdown" "C:\Users\trist\AppData\Local\Temp\RtmpCYEhnm\file49485df03093.html"
 #> ✔ Writing 'R/day07.R'
 #> ● Write your solution code here
 #> ● Once you unlock Part Two, update the Roxygen block with the description
@@ -355,7 +353,7 @@ is copied to the clipboard, but for this demo, I have to disable it.
 ``` r
 aoc::download_part2_to_roxygen_md(day = 7, clip = FALSE)
 downloading puzzle html using .aoccookie
-Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file519059263c05.markdown" "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\file519059263c05.html"
+Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpCYEhnm\file494853b95982.markdown" "C:\Users\trist\AppData\Local\Temp\RtmpCYEhnm\file494853b95982.html"
 #' **Part Two**
 #' The programs explain the situation: they can\'t get down. Rather, they
 #' *could* get down, if they weren\'t expending all of their energy trying
@@ -391,8 +389,9 @@ Executing: pandoc -t markdown -o "C:\Users\trist\AppData\Local\Temp\RtmpgFyRWq\f
 
 ## Credit
 
-Thanks to [{golem}](https://github.com/ThinkR-open/golem) for their implementation of dev files to support 
-package development. `aoc::create_aoc()` is inspired by and based on `golem::create_golem()`.
+Thanks to [{golem}](https://github.com/ThinkR-open/golem) for their
+implementation of dev files to support package development.
+`aoc::create_aoc()` is inspired by and based on `golem::create_golem()`.
 
 Hex icon created using the [hexmake
 app](https://connect.thinkr.fr/hexmake/) from

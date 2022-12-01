@@ -84,23 +84,21 @@ for each day.
 
 ```{r, eval = FALSE}
 aoc::use_day(1, year = 2020)
-#> √ Writing 'R/data-solutions.R'
-#> * Modify 'R/data-solutions.R'
+#> ✔ Writing 'R/data-solutions.R'
+#> • Modify 'R/data-solutions.R'
+#> downloading puzzle html using .aoccookie
 #> Executing: pandoc -t markdown -o 
-#> "C:\Users\trist\AppData\Local\Temp\RtmpiYf4Vi\file42a83cf05e25.markdown" 
-#> ">C:\Users\trist\AppData\Local\Temp\RtmpiYf4Vi\file42a83cf05e25.html"
-#> √ Writing 'R/day01.R'
-#> * Modify 'R/day01.R'
+#> "C:\Users\trist\AppData\Local\Temp\RtmpK8sv2r\file228c54056ded.markdown" 
+#> "C:\Users\trist\AppData\Local\Temp\RtmpK8sv2r\file228c54056ded.html"
+#> ✔ Writing 'R/day01.R'
 #> ● Write your solution code here
 #> ● Once you unlock Part Two, update the Roxygen block with the description
-#> √ Writing 'inst/input01.txt'
-#> * Modify 'inst/input01.txt'
+#> ✔ Writing 'inst/input01.txt'
 #> ● Copy your problem input into this file
-#> √ Writing 'tests/testthat/test-day01.R'
-#> * Modify 'tests/testthat/test-day01.R'
+#> ✔ Writing 'tests/testthat/test-day01.R'
+#> • Edit 'tests/testthat/test-day01.R'
 #> ● Write unit tests using the examples from the problem description
-#> √ Writing 'inst/run-day01.R'
-#> * Modify 'inst/run-day01.R'
+#> ✔ Writing 'inst/run-day01.R'
 #> ● Run your solution on the input here. Once it works, update R/data-solutions.R
 ```
 

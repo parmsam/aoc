@@ -259,7 +259,7 @@ done <- function (..., .envir = parent.frame()) {
 
 done_bullet <- function () crayon::green(clisymbols::symbol$tick)
 
-bulletize <- function(line, bullet = "*") {
+bulletize <- function(line, bullet = clisymbols::symbol$bullet) {
   paste0(bullet, " ", line)
 }
 

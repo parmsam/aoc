@@ -34,5 +34,6 @@ Create package for Advent of Code work
 Creates a package skeleton to work on Advent of Code.
 
 See \code{aoc::use_day()} function details (\code{?aoc::use_day()}) for more info on
-primary package function.
+primary package function. Function based on \code{golem::create_golem()}
+(https://github.com/ThinkR-open/golem).
 }
