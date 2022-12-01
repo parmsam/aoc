@@ -26,7 +26,7 @@ usethis::use_pipe(export = TRUE)
 fs::file_create(".aoccookie")
 rstudioapi::navigateToFile(".aoccookie")
 # add string object named session to .aoccokie
-# session=[...]" where [...] is whatever the key is
+# session=[...] where [...] is whatever the key is
 # find your key using your preferred browser devtools
 usethis::use_git_ignore(".aoccookie")
 

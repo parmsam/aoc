@@ -9,6 +9,11 @@ Authors@R:
         role = c("aut", "cre"),
         email = "tristan.mahr@wisc.edu",
         comment = c(ORCID = "0000-0002-8890-5116")
+      ),
+      person(
+        given = "Sam",
+        family = "Parmar",
+        role = c("ctb")
       )
     )
 Description: What the package does (one paragraph).
